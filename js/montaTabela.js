@@ -12,7 +12,6 @@ function createTr(dataTableTr, type = 'body') {
     const td = createTd(dataTableTr[dataTd], type)
     tr.appendChild(td)
   }
-  
   return tr
 }
 
@@ -26,6 +25,17 @@ function mountTable(dataTable) {
     const values = Object.values(dataTableBody);
     const tBody = createTr(values);
 
-    tableAlunos.appendChild(tBody)
+    tableAlunos.appendChild(tBody);
+
+    let aprovado = values.includes("aprovado");
+    if(aprovado) {
+      tBody.classList.add("aprovado");
+    } else {
+      tBody.classList.add("reprovado");
+    }
+
+    console.log(values.includes("aprovado"));
   })
 }
+
+

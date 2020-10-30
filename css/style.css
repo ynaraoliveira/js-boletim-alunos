@@ -21,3 +21,11 @@ tr:nth-child(odd) {
 .td-head {
   text-transform: uppercase;
 }
+
+.aprovado {
+  color: #81b214;
+}
+
+.reprovado {
+  color: #bb2205;
+}

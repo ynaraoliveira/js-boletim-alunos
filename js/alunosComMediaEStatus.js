@@ -42,3 +42,5 @@ const listaAlunosComMediaEStatus = () => listaAlunos.map((aluno) => {
   };
   return alunoComMediaEStatus;
 });
+
+
